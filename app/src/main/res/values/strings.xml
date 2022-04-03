@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WRG</string>
+    <string name="details">Details</string>
+    <string name="username">Username:</string>
+    <string name="email">Email:</string>
+    <string name="phone">Phone:</string>
+    <string name="website">Website:</string>
+    <string name="company_name">Company name:</string>
+    <string name="catch_phrase">Catch Phrase:</string>
+    <string name="bs">Bs:</string>
+    <string name="address">Address</string>
+    <string name="company_details">Company details</string>
+    <string name="textview">TextView</string>
+    <string name="image">image</string>
+    <string name="underscore">-</string>
+</resources>
