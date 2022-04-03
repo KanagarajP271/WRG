@@ -12,11 +12,17 @@ interface RetrofitService {
     suspend fun getAllEmployees() : Response<List<Employee>>
 
     companion object {
+        var BASE_URL = "https://www.mocky.io/"
+
+
         var retrofitService: RetrofitService? = null
         fun getInstance() : RetrofitService {
+            if(BASE_URL.startsWith("http://")){
+                BASE_URL = BASE_URL.replaceFirst("http","https")
+            }
             if (retrofitService == null) {
                 val retrofit = Retrofit.Builder()
-                    .baseUrl("https://www.mocky.io/")
+                    .baseUrl(BASE_URL)
                     .addConverterFactory(GsonConverterFactory.create())
                     .build()
                 retrofitService = retrofit.create(RetrofitService::class.java)
