@@ -12,7 +12,7 @@ interface RetrofitService {
     suspend fun getAllEmployees() : Response<List<Employee>>
 
     companion object {
-        var BASE_URL = "https://www.mocky.io/"
+        var BASE_URL = "http://www.mocky.io/"
 
 
         var retrofitService: RetrofitService? = null
